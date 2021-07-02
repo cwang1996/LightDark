@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: .5s ease;
+    font-weight: bold;
+}
+
+.title-color {
+    color: #fff;
+}
+
+.container {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    border-radius: 80px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container i {
+    color: turquoise;
+    position: absolute;
+}
+
+#moon {
+    left: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#sun {
+    color: yellow;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.switch {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 80px;
+    transform: translate(25%, -50%);
+    cursor: pointer;
+    transition: transform .5s ease;
+    /* 150% to cover right */
+}
+
+.switch-right {
+    transform: translate(150%, -50%);
+}
+
+.background-night {
+    background-color: #404040;
+}
